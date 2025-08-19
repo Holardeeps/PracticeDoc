@@ -2,7 +2,8 @@
 const ListItem = ({ item }) => {
   return (
     <li>
-      {JSON.stringify(item)}
+      {/* We convert the list item we want to display to javascript object string from JSON object */}
+      {JSON.stringify(item)} 
     </li>
   )
 }

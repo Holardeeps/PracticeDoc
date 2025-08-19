@@ -7,8 +7,8 @@ import List from './List';
 // This is the App function that we are exporting out from this component into the INDEX.HTML through MAIN.JSX
 function App() {
   // We create states that would change during and after render based on different events
-  const [items, setItems] = useState([]);
-  const [request, setRequest] = useState('users')
+  const [items, setItems] = useState([]); //Using items to store the data we get from the API_URL
+  const [request, setRequest] = useState('users') // Using request to control the data we get from the API_URL
 
   const API_URL = 'http://jsonplaceholder.typicode.com/'; //We define any api with API_URL  
 
@@ -25,7 +25,7 @@ function App() {
           return; //Here return; breaks out of the function if the condition is false
         }
 
-        const data = await response.json(); //Here we convert our response we get from our API to js object
+        const data = await response.json(); //Here we convert our response we get from our API to json data
         setItems(data); //And set the data to our items state to control the data we display
         // console.log(data);
 
