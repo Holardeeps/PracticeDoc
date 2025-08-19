@@ -3,6 +3,7 @@ import { useEffect, useState } from 'react'; //Importing  the useEffect and useS
 // Importing our components from the directories that they were created in
 import Button from "./Button"
 import List from './List';
+import Table from './Table';
 
 // This is the App function that we are exporting out from this component into the INDEX.HTML through MAIN.JSX
 function App() {
@@ -40,7 +41,7 @@ function App() {
 
   return (
     <main>
-      <div>
+      <div className='form'>
 
 
       <Button
@@ -59,10 +60,13 @@ function App() {
         setRequest={setRequest}
        />
       </div>
-
+{/* 
        <List
         items={items}
-        />
+        /> */}
+      <Table
+        items={items}
+       />
     </main>
   )
 }

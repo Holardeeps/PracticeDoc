@@ -24,14 +24,18 @@ body {
 button {
   border-radius: 8px;
   border: 1px solid transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   padding: 0.6em 1.2em;
-  font-size: 1em;
+  font-size: 1.7em;
   font-weight: 500;
   font-family: inherit;
   background-color: #1a1a1a;
   width: 33.3333%;
   cursor: pointer;
   transition: border-color 0.25s;
+  height: 100%;
 }
 button:hover {
   border-color: #646cff;
@@ -49,4 +53,15 @@ div {
   width: 100%;
   display: flex;
 
+}
+.form {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 64px;
+}
+
+td {
+  border: 1px solid #fff;
 }
