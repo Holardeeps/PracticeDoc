@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react'; //Importing  the useEffect and useState hooks from react
 
-// Importing our components from the directories that they were created in
+// Importing our components from the directories that they were created in ..
 import Button from "./Button"
 import List from './List';
 import Table from './Table';
